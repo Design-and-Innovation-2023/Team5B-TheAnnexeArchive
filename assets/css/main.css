@@ -824,20 +824,22 @@ figure figcaption {
   }
 }
 
+/* CSS for the hero slider section */
 .custom-swiper-button-next,
 .custom-swiper-button-prev {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   z-index: 9;
 }
 
-@media (max-width: 768px) {
+.custom-swiper-button-next {
+  right: 40px;
+  transform: translateY(-50%);
+}
 
-  .custom-swiper-button-next,
-  .custom-swiper-button-prev {
-    display: none;
-  }
+.custom-swiper-button-prev {
+  left: 40px;
+  transform: translateY(-50%);
 }
 
 .custom-swiper-button-next span,
@@ -854,20 +856,21 @@ figure figcaption {
   color: rgba(var(--color-white-rgb), 1);
 }
 
-.custom-swiper-button-next {
-  right: 40px;
-}
+/* Mobile View */
+@media (max-width: 768px) {
+  .custom-swiper-button-next,
+  .custom-swiper-button-prev {
+    display: none;
+  }
 
-.custom-swiper-button-prev {
-  left: 40px;
-}
+  .img-bg {
+    background-size: 100% 100%;
+    height: 200px;
+  }
 
-.swiper-pagination .swiper-pagination-bullet {
-  background-color: rgba(var(--color-white-rgb), 0.8);
-}
-
-.swiper-pagination .swiper-pagination-bullet-active {
-  background-color: rgba(var(--color-white-rgb), 1);
+  .img-bg-inner {
+    bottom: 20px;
+  }
 }
 
 .more {
