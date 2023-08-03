@@ -1541,10 +1541,15 @@ figure figcaption {
 }
 
 /* Default styles for .thumbnail1 and .thumbnailImgMargin */
-.thumbnail1,
 .thumbnailImgMargin {
   padding-top: 70px;
   width: 100%;
+}
+
+.thumbnail1 {
+  padding-top: 70px;
+  width: 100%;
+  height: 450px !important;
 }
 
 /* Mobile view styles (adjust the max-width as needed) */
